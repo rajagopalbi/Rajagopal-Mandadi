@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projects | RM ARCHITECT - Sr. Power BI Architect</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        /* Custom Glassmorphism & Elevation */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(142, 213, 255, 0.4);
+            box-shadow: 0 0 30px rgba(123, 208, 255, 0.1);
+        }
+
+        .glow-border {
+            position: relative;
+        }
+
+        .glow-border::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(to bottom right, #8ed5ff, transparent, transparent);
+            z-index: -1;
+            border-radius: inherit;
+            opacity: 0.3;
+        }
+
+        /* Material Icons Utility */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        /* Grid background effect */
+        .bg-grid {
+            background-image: radial-gradient(circle at 2px 2px, rgba(142, 213, 255, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#0b1326",
+                        "error": "#ffb4ab",
+                        "secondary": "#bcc7de",
+                        "surface-bright": "#31394d",
+                        "on-secondary-fixed": "#111c2d",
+                        "surface-container-high": "#222a3d",
+                        "on-secondary-container": "#aeb9d0",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "outline": "#87929a",
+                        "on-tertiary-fixed-variant": "#004c6e",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-lowest": "#060e20",
+                        "secondary-container": "#3e495d",
+                        "inverse-primary": "#00668a",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#c4e7ff",
+                        "on-primary-fixed-variant": "#004c69",
+                        "on-primary-fixed": "#001e2c",
+                        "on-secondary": "#263143",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-variant": "#2d3449",
+                        "primary": "#8ed5ff",
+                        "on-primary-container": "#004965",
+                        "on-error": "#690005",
+                        "on-primary": "#00354a",
+                        "surface-container-highest": "#2d3449",
+                        "surface-container-low": "#131b2e",
+                        "tertiary": "#98d3ff",
+                        "on-tertiary-container": "#00486a",
+                        "on-surface": "#dae2fd",
+                        "inverse-surface": "#dae2fd",
+                        "tertiary-fixed-dim": "#89ceff",
+                        "primary-fixed-dim": "#7bd0ff",
+                        "secondary-fixed": "#d8e3fb",
+                        "background": "#0b1326",
+                        "tertiary-fixed": "#c9e6ff",
+                        "tertiary-container": "#43bbff",
+                        "surface-tint": "#7bd0ff",
+                        "on-tertiary-fixed": "#001e2f",
+                        "surface": "#0b1326",
+                        "on-background": "#dae2fd",
+                        "surface-container": "#171f33",
+                        "primary-container": "#38bdf8",
+                        "outline-variant": "#3e484f",
+                        "on-tertiary": "#00344d",
+                        "on-surface-variant": "#bdc8d1",
+                        "inverse-on-surface": "#283044"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "code-sm": ["JetBrains Mono"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "700" }],
+                        "headline-xl": ["60px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "code-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-surface-dim text-on-surface selection:bg-primary/30 font-body-md overflow-x-hidden">
+    <!-- TopNavBar Implementation -->
+    <header class="fixed top-0 w-full z-50 bg-surface-dim/80 backdrop-blur-md border-b border-white/10 h-20">
+        <nav class="flex justify-between items-center px-gutter max-w-container-max mx-auto h-full">
+            <a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary" href="index.html">
+                RAJAGOPAL MANDADI</a>
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="index.html">Home</a>
+                <a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="experience.html">Experience</a>
+                <a class="font-headline-sm text-headline-sm text-primary border-b-2 border-primary pb-1"
+                    href="projects.html">Projects</a>
+                <a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="hidden sm:flex space-x-2">
+                    <span
+                        class="material-symbols-outlined text-primary p-2 hover:bg-white/5 rounded-full transition-all duration-300">terminal</span>
+                    <span
+                        class="material-symbols-outlined text-primary p-2 hover:bg-white/5 rounded-full transition-all duration-300">cloud_done</span>
+                </div>
+                <button onclick="alert('Curriculum Vitae / Resume will open in a new tab.')"
+                    class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-label-caps font-bold hover:brightness-110 transition-all">
+                    Download CV
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[614px] flex flex-col items-center justify-center text-center px-gutter py-section-gap overflow-hidden bg-grid">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface-dim/50 to-surface-dim"></div>
+            <div class="relative z-10 max-w-4xl">
+                <span
+                    class="inline-block px-4 py-1 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-caps text-label-caps">
+                    PORTFOLIO &amp; CASE STUDIES
+                </span>
+                <h1 class="font-headline-xl text-headline-xl mb-6 tracking-tighter">
+                    Architecting <span class="text-primary">Data Insights</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                    Delivering end-to-end Power BI solutions that transform complex infrastructure data into actionable,
+                    high-performance architectural narratives.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <div class="w-px h-24 bg-gradient-to-b from-primary to-transparent opacity-50"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Grid -->
+        <div class="max-w-container-max mx-auto px-gutter pb-section-gap space-y-section-gap">
+            <!-- Project 1: Integrated Analytics Ecosystem -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-xl overflow-hidden p-1 glow-border">
+                        <div class="aspect-video relative bg-surface-container-high overflow-hidden rounded-lg">
+                            <img alt="Project 1 Dashboard" class="w-full h-full object-cover opacity-80"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbJGsBmmU42XS0J8BZli0ZUuKWW_HvNTo-wVBbGaRUbs5SYknq109OCAkSk3BjXV5TzcvsDWt_PhlmQaGJd5cfxqV_i7umpgIH03BKXddSUMux6olm0kX79LLjJLPEEXnn-TUyGXOh2DiXWSoHs5dtMyxDNVUmk8pCON3fZ8Fk9uvUMJz4BjgV4HF-y21jZpm6_ESBKgQ4VrXmjURz8_znbSYQ65rn1saOqnBJ7W6MSzYPetmZRHo3uVXc2EhAx8rzf_X7IXeXLd_X" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 flex gap-3">
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">SQL
+                                    Server</span>
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">Azure
+                                    SQL</span>
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">Power
+                                    BI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex flex-col justify-center">
+                    <h2 class="font-headline-lg text-headline-lg mb-4 text-primary leading-tight">Integrated Analytics
+                        Ecosystem</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        A unified data architecture designed to bridge on-premise SQL Server environments with Azure
+                        Cloud instances, providing a single source of truth for global operations.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">architecture</span>
+                            <div>
+                                <h4 class="font-label-caps text-label-caps text-primary mb-1 uppercase">The Challenge
+                                </h4>
+                                <p class="font-body-md text-body-md">Fragmented data silos across legacy SQL Server and
+                                    hybrid Azure environments leading to inconsistent reporting and latency issues.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">construction</span>
+                            <div>
+                                <h4 class="font-label-caps text-label-caps text-primary mb-1 uppercase">The Solution
+                                </h4>
+                                <p class="font-body-md text-body-md">Implementation of complex DAX expressions and Row
+                                    Level Security (RLS) within a unified DirectQuery model, utilizing custom visuals
+                                    for architectural flow mapping.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+                            <span class="block font-headline-sm text-headline-sm text-primary mb-1">100%</span>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant">Data Accuracy</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+                            <span class="block font-headline-sm text-headline-sm text-primary mb-1">99.9%</span>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant">Uptime SLA</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project 2: Advanced DAX & Data Modeling -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center">
+                    <h2 class="font-headline-lg text-headline-lg mb-4 text-primary leading-tight">Advanced DAX &amp;
+                        Data Modeling</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Engineering high-performance calculation engines capable of real-time time-intelligence analysis
+                        for multi-billion record datasets.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">query_stats</span>
+                            <div>
+                                <h4 class="font-label-caps text-label-caps text-primary mb-1 uppercase">The Challenge
+                                </h4>
+                                <p class="font-body-md text-body-md">Slow dashboard performance and complex logic
+                                    requirements for MOM%, YOY%, and custom fiscal calendars.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">bolt</span>
+                            <div>
+                                <h4 class="font-label-caps text-label-caps text-primary mb-1 uppercase">The Solution
+                                </h4>
+                                <p class="font-body-md text-body-md">Refactored Power Query transformations to move
+                                    heavy lifting to the source. Implemented optimized DAX measures and Star Schema
+                                    architecture.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+                            <span class="block font-headline-sm text-headline-sm text-primary mb-1">40%</span>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant">Query
+                                Optimization</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+                            <span class="block font-headline-sm text-headline-sm text-primary mb-1">3x</span>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant">Load Speed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <div class="glass-card rounded-xl overflow-hidden p-1 glow-border">
+                        <div class="aspect-video relative bg-surface-container-high overflow-hidden rounded-lg">
+                            <img alt="Project 2 Technical Visual" class="w-full h-full object-cover opacity-80"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD4SmYinq4UpHkzZh3v6WsD2wVRaMCmsQk8ay0LP2SYzOuDJ8ApXibxGhQiJQwq0WN_GTHyDusErLjBsntmUANgGOJLSYQb-Y7_CXDh95ptIauRqUBhH6LeQIUtYcSWoU-XnL4o2QcSapeDEn6t7o7ovZi1uKuOWdmLwzCgL7-c3mHIzjhOf2LtyrHa5h6oPsxcg0BErhF09oO5Najn0z11NA2gHqNDylIg9E1PqIJOSrzHuRDtgxzqkfPjRhYIgd8UpOfr9hBzWdJ" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-dim/80 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 flex gap-3">
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">DAX
+                                    Engine</span>
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">Power
+                                    Query</span>
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">Star
+                                    Schema</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project 3: Power App & BI Integration -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-xl overflow-hidden p-1 glow-border">
+                        <div class="aspect-video relative bg-surface-container-high overflow-hidden rounded-lg">
+                            <div class="absolute inset-0 bg-[#1e293b] flex items-center justify-center">
+                                <!-- Abstract visual representing integration -->
+                                <div class="relative w-48 h-48">
+                                    <div class="absolute inset-0 border-2 border-primary/20 rounded-full animate-ping">
+                                    </div>
+                                    <div class="absolute inset-4 border-2 border-primary/40 rounded-full animate-pulse">
+                                    </div>
+                                    <div
+                                        class="absolute inset-8 flex items-center justify-center bg-surface-dim rounded-full border border-primary/60">
+                                        <span class="material-symbols-outlined text-primary text-5xl">sync_alt</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 flex gap-3">
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">Power
+                                    Apps</span>
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">API
+                                    Gateway</span>
+                                <span
+                                    class="bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded text-primary font-code-sm text-code-sm">Write-back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex flex-col justify-center">
+                    <h2 class="font-headline-lg text-headline-lg mb-4 text-primary leading-tight">Power App &amp; BI
+                        Integration</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Creating a bi-directional data flow ecosystem where insights from Power BI directly trigger
+                        operational actions via embedded Power Apps.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">edit_square</span>
+                            <div>
+                                <h4 class="font-label-caps text-label-caps text-primary mb-1 uppercase">The Challenge
+                                </h4>
+                                <p class="font-body-md text-body-md">Users needed to update forecast values and comments
+                                    directly within the report without switching context or applications.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary mt-1">integration_instructions</span>
+                            <div>
+                                <h4 class="font-label-caps text-label-caps text-primary mb-1 uppercase">The Solution
+                                </h4>
+                                <p class="font-body-md text-body-md">Embedded Power App within the Power BI canvas using
+                                    direct write-back to SQL Server via Power Automate flows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+                            <span class="block font-headline-sm text-headline-sm text-primary mb-1">0ms</span>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant">Sync Latency</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant">
+                            <span class="block font-headline-sm text-headline-sm text-primary mb-1">60%</span>
+                            <span class="font-label-caps text-label-caps text-on-surface-variant">Process
+                                Efficiency</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Contact CTA -->
+        <section class="max-w-4xl mx-auto px-gutter py-section-gap text-center border-t border-outline-variant/30">
+            <h2 class="font-headline-lg text-headline-lg mb-6">Ready to Architect Your Data?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                Let's build a robust, scalable BI ecosystem tailored to your engineering needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="window.location.href='contact.html'"
+                    class="bg-primary text-on-primary px-8 py-4 rounded-lg font-headline-sm text-headline-sm hover:brightness-110 transition-all">
+                    Get In Touch
+                </button>
+                <button onclick="window.location.href='experience.html'"
+                    class="border border-primary text-primary px-8 py-4 rounded-lg font-headline-sm text-headline-sm hover:bg-primary/5 transition-all">
+                    View Technical Stack
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Implementation -->
+    <footer class="w-full py-12 border-t border-outline-variant bg-surface-container-lowest">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto space-y-6 md:space-y-0">
+            <div class="font-headline-sm text-headline-sm text-primary"> RAJAGOPAL MANDADI</div>
+            <div class="flex gap-8">
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                    href="https://linkedin.com" target="_blank">SQL Server</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                    href="https://github.com" target="_blank">Azure Cloud</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                    href="index.html">DAX Patterns</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="font-label-caps text-label-caps text-on-surface-variant opacity-80">
+                © 2024 RAJAGOPAL MANDADI | SR. POWER BI ARCHITECT
+            </div>
+        </div>
+    </footer>
+    <!-- Subtle Cursor Interaction -->
+    <div class="fixed pointer-events-none w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 z-0 opacity-0 transition-opacity duration-700"
+        id="cursor-glow"></div>
+    <script>
+        const glow = document.getElementById('cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+            glow.style.opacity = '1';
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
