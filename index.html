@@ -5,15 +5,18 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Rajagopal Mandadi | Sr. Power BI Architect & Data Engineer</title>
-    <meta name="description" content="Portfolio of Rajagopal Mandadi (R Mandadi), Sr. Power BI Architect and Specialist Data Engineer. Expert in Microsoft Power BI, SQL Server, DAX, and cloud analytics architectures." />
-<meta name="keywords" content="Rajagopal Mandadi, Power BI Architect, Data Engineer, Portfolio, Cloud Architecture, SQL Server, DAX" />
-<link rel="canonical" href="https://yourdomain.com/index.html" />
-<meta property="og:title" content="Rajagopal Mandadi | Sr. Power BI Architect & Data Engineer" />
-<meta property="og:description" content="Portfolio of Rajagopal Mandadi showcasing Power BI, data engineering, and cloud solutions." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://yourdomain.com/index.html" />
-<meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg" />
-<script type="application/ld+json">
+    <meta name="description"
+        content="Portfolio of Rajagopal Mandadi (R Mandadi), Sr. Power BI Architect and Specialist Data Engineer. Expert in Microsoft Power BI, SQL Server, DAX, and cloud analytics architectures." />
+    <meta name="keywords"
+        content="Rajagopal Mandadi, Power BI Architect, Data Engineer, Portfolio, Cloud Architecture, SQL Server, DAX" />
+    <link rel="canonical" href="https://yourdomain.com/index.html" />
+    <meta property="og:title" content="Rajagopal Mandadi | Sr. Power BI Architect & Data Engineer" />
+    <meta property="og:description"
+        content="Portfolio of Rajagopal Mandadi showcasing Power BI, data engineering, and cloud solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/index.html" />
+    <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg" />
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -22,8 +25,12 @@
 }
 </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -179,10 +186,12 @@
             pointer-events: none;
             transition: opacity 0.35s ease;
         }
+
         .mobile-nav-overlay.active {
             opacity: 1;
             pointer-events: auto;
         }
+
         .mobile-nav-panel {
             position: fixed;
             top: 0;
@@ -200,9 +209,11 @@
             display: flex;
             flex-direction: column;
         }
+
         .mobile-nav-panel.active {
             transform: translateX(0);
         }
+
         .mobile-nav-link {
             display: flex;
             align-items: center;
@@ -216,16 +227,19 @@
             transition: all 0.25s ease;
             border-left: 3px solid transparent;
         }
+
         .mobile-nav-link:hover,
         .mobile-nav-link.active-link {
             color: #8ed5ff;
             background: rgba(142, 213, 255, 0.08);
             border-left-color: #8ed5ff;
         }
+
         .mobile-nav-link .material-symbols-outlined {
             font-size: 22px;
             color: #8ed5ff;
         }
+
         .hamburger-btn {
             display: flex;
             flex-direction: column;
@@ -240,6 +254,7 @@
             padding: 4px;
             z-index: 102;
         }
+
         .hamburger-btn span {
             display: block;
             width: 24px;
@@ -248,51 +263,55 @@
             border-radius: 2px;
             transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
         }
+
         .hamburger-btn.open span:nth-child(1) {
             transform: translateY(7px) rotate(45deg);
         }
+
         .hamburger-btn.open span:nth-child(2) {
             opacity: 0;
             transform: scaleX(0);
         }
+
         .hamburger-btn.open span:nth-child(3) {
             transform: translateY(-7px) rotate(-45deg);
         }
     </style>
 </head>
 
-<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container font-body-md text-body-md overflow-x-hidden">
+<body
+    class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container font-body-md text-body-md overflow-x-hidden">
     <!-- WebGL Background -->
     <div class="fixed inset-0 z-0 pointer-events-none opacity-40">
         <!-- STITCH_SHADER_START:ANIMATION_29 class="absolute inset-0 w-full h-full" -->
         <div class="absolute inset-0 w-full h-full" style="display:block;">
             <canvas id="shader-canvas-ANIMATION_29" style="display:block;width:100%;height:100%"></canvas>
             <script>
-                (function() {
-                    const canvas = document.getElementById('shader-canvas-ANIMATION_29');
+                    (function () {
+                        const canvas = document.getElementById('shader-canvas-ANIMATION_29');
 
-                    function syncSize() {
-                        const w = canvas.clientWidth || 1280;
-                        const h = canvas.clientHeight || 720;
-                        if (canvas.width !== w || canvas.height !== h) {
-                            canvas.width = w;
-                            canvas.height = h;
+                        function syncSize() {
+                            const w = canvas.clientWidth || 1280;
+                            const h = canvas.clientHeight || 720;
+                            if (canvas.width !== w || canvas.height !== h) {
+                                canvas.width = w;
+                                canvas.height = h;
+                            }
                         }
-                    }
-                    if (typeof ResizeObserver !== 'undefined') {
-                        new ResizeObserver(syncSize).observe(canvas);
-                    }
-                    syncSize();
+                        if (typeof ResizeObserver !== 'undefined') {
+                            new ResizeObserver(syncSize).observe(canvas);
+                        }
+                        syncSize();
 
-                    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-                    if (!gl) return;
-                    const vs = `attribute vec2 a_position;
+                        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+                        if (!gl) return;
+                        const vs = `attribute vec2 a_position;
 varying vec2 v_texCoord;
 void main() {
   v_texCoord = a_position * 0.5 + 0.5;
   gl_Position = vec4(a_position, 0.0, 1.0);
 }`;
-                    const fs = `precision highp float;
+                        const fs = `precision highp float;
 uniform float u_time;
 uniform vec2 u_resolution;
 varying vec2 v_texCoord;
@@ -344,65 +363,75 @@ void main() {
     gl_FragColor = vec4(color, 1.0);
 }`;
 
-                    function cs(type, src) {
-                        const s = gl.createShader(type);
-                        gl.shaderSource(s, src);
-                        gl.compileShader(s);
-                        return s;
-                    }
-                    const prog = gl.createProgram();
-                    gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
-                    gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
-                    gl.linkProgram(prog);
-                    gl.useProgram(prog);
-                    const buf = gl.createBuffer();
-                    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-                    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
-                    const pos = gl.getAttribLocation(prog, 'a_position');
-                    gl.enableVertexAttribArray(pos);
-                    gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
-                    const uTime = gl.getUniformLocation(prog, 'u_time');
-                    const uRes = gl.getUniformLocation(prog, 'u_resolution');
-                    const uMouse = gl.getUniformLocation(prog, 'u_mouse');
-
-                    let mouse = {
-                        x: canvas.width / 2,
-                        y: canvas.height / 2
-                    };
-                    window.addEventListener('mousemove', (event) => {
-                        const rect = canvas.getBoundingClientRect();
-                        if (rect.width && rect.height) {
-                            const nx = (event.clientX - rect.left) / rect.width;
-                            const ny = 1.0 - (event.clientY - rect.top) / rect.height;
-                            mouse.x = nx * canvas.width;
-                            mouse.y = ny * canvas.height;
+                        function cs(type, src) {
+                            const s = gl.createShader(type);
+                            gl.shaderSource(s, src);
+                            gl.compileShader(s);
+                            return s;
                         }
-                    });
+                        const prog = gl.createProgram();
+                        gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+                        gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+                        gl.linkProgram(prog);
+                        gl.useProgram(prog);
+                        const buf = gl.createBuffer();
+                        gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+                        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+                        const pos = gl.getAttribLocation(prog, 'a_position');
+                        gl.enableVertexAttribArray(pos);
+                        gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+                        const uTime = gl.getUniformLocation(prog, 'u_time');
+                        const uRes = gl.getUniformLocation(prog, 'u_resolution');
+                        const uMouse = gl.getUniformLocation(prog, 'u_mouse');
 
-                    function render(t) {
-                        if (typeof ResizeObserver === 'undefined') syncSize();
-                        gl.viewport(0, 0, canvas.width, canvas.height);
-                        if (uTime) gl.uniform1f(uTime, t * 0.001);
-                        if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
-                        if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
-                        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-                        requestAnimationFrame(render);
-                    }
-                    render(0);
-                })();
+                        let mouse = {
+                            x: canvas.width / 2,
+                            y: canvas.height / 2
+                        };
+                        window.addEventListener('mousemove', (event) => {
+                            const rect = canvas.getBoundingClientRect();
+                            if (rect.width && rect.height) {
+                                const nx = (event.clientX - rect.left) / rect.width;
+                                const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+                                mouse.x = nx * canvas.width;
+                                mouse.y = ny * canvas.height;
+                            }
+                        });
+
+                        function render(t) {
+                            if (typeof ResizeObserver === 'undefined') syncSize();
+                            gl.viewport(0, 0, canvas.width, canvas.height);
+                            if (uTime) gl.uniform1f(uTime, t * 0.001);
+                            if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+                            if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+                            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                            requestAnimationFrame(render);
+                        }
+                        render(0);
+                    })();
             </script>
         </div>
         <!-- STITCH_SHADER_END:ANIMATION_29 -->
     </div>
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-panel border-b border-white/5 h-20">
-        <div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
-            <a id="logo-link" class="font-headline-sm text-headline-sm font-bold tracking-tighter text-primary" href="index.html">R MANDADI</a>
+        <div
+            class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
+            <a id="logo-link" class="font-headline-sm text-headline-sm font-bold tracking-tighter text-primary"
+                href="index.html">Rajagopal Mandadi</a>
             <div class="hidden md:flex items-center space-gap gap-8">
-                <a id="nav-link-home" class="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md transition-all duration-300" href="index.html">Home</a>
-                <a id="nav-link-experience" class="text-on-surface-variant hover:text-primary transition-all duration-300 font-body-md text-body-md" href="experience.html">Experience</a>
-                <a id="nav-link-projects" class="text-on-surface-variant hover:text-primary transition-all duration-300 font-body-md text-body-md" href="projects.html">Projects</a>
-                <a id="nav-link-contact" class="text-on-surface-variant hover:text-primary transition-all duration-300 font-body-md text-body-md" href="contact.html">Contact</a>
+                <a id="nav-link-home"
+                    class="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md transition-all duration-300"
+                    href="index.html">Home</a>
+                <a id="nav-link-experience"
+                    class="text-on-surface-variant hover:text-primary transition-all duration-300 font-body-md text-body-md"
+                    href="experience.html">Experience</a>
+                <a id="nav-link-projects"
+                    class="text-on-surface-variant hover:text-primary transition-all duration-300 font-body-md text-body-md"
+                    href="projects.html">Projects</a>
+                <a id="nav-link-contact"
+                    class="text-on-surface-variant hover:text-primary transition-all duration-300 font-body-md text-body-md"
+                    href="contact.html">Contact</a>
             </div>
             <div class="flex items-center gap-3">
 
@@ -420,7 +449,9 @@ void main() {
     <div id="mobile-nav-panel" class="mobile-nav-panel md:hidden">
         <div class="flex items-center justify-between px-6 h-20 border-b border-white/10">
             <span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tighter">Menu</span>
-            <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors" aria-label="Close navigation menu">
+            <button id="mobile-menu-close"
+                class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors"
+                aria-label="Close navigation menu">
                 <span class="material-symbols-outlined text-on-surface-variant" style="font-size:24px">close</span>
             </button>
         </div>
@@ -447,25 +478,40 @@ void main() {
     <!-- Main Content -->
     <main class="relative z-10">
         <!-- Hero Section -->
-        <section class="min-h-screen flex items-center pt-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto mb-section-gap" id="home">
+        <section
+            class="min-h-screen flex items-center pt-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto mb-section-gap"
+            id="home">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-7 animate-reveal">
-                    <span class="font-label-caps text-label-caps text-primary tracking-widest block mb-2">SR. POWER BI ARCHITECT</span>
-                    <span class="font-body-lg text-body-lg text-on-surface/60 tracking-wide block mb-4">Rajagopal Mandadi</span>
-                    <h1 class="font-headline-xl text-headline-xl text-on-surface mb-6 leading-none">Architecting <br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Intelligence.</span></h1>
+                    <span class="font-label-caps text-label-caps text-primary tracking-widest block mb-2">SR. POWER BI
+                        ARCHITECT</span>
+                    <span class="font-body-lg text-body-lg text-on-surface/60 tracking-wide block mb-4">Rajagopal
+                        Mandadi</span>
+                    <h1 class="font-headline-xl text-headline-xl text-on-surface mb-6 leading-none">Architecting
+                        <br /><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Intelligence.</span>
+                    </h1>
                     <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-10">
-                        Senior Engineering specialist with 6+ years of expertise in Microsoft Power BI, SQL, and DAX. I bridge the gap between complex raw data and executive strategy through high-performance analytical architecture.
+                        Senior Engineering specialist with 6+ years of expertise in Microsoft Power BI, SQL, and DAX. I
+                        bridge the gap between complex raw data and executive strategy through high-performance
+                        analytical architecture.
                     </p>
                     <div class="glass-panel p-6 rounded-xl border-l-4 border-l-primary max-w-xl">
                         <p class="italic font-body-md text-body-md text-on-surface/80">
-                            "Data is the blueprint; Engineering is the construction. I build the pipelines that turn raw complexity into strategic clarity."
+                            "Data is the blueprint; Engineering is the construction. I build the pipelines that turn raw
+                            complexity into strategic clarity."
                         </p>
                     </div>
                 </div>
                 <div class="md:col-span-5 flex justify-center animate-reveal" style="animation-delay: 0.2s;">
-                    <div class="relative w-full max-w-md aspect-[4/5] rounded-2xl glass-panel blue-glow-rim p-2 overflow-hidden">
-                        <img alt="R Mandadi Portrait" class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsSWhDtE6G9XQFZ1wZwq_joTJLkCVia_bf6xkNW1f4_EQJHbTlY9VlFQMYVl_UBKJwTknYFFGiRxLe_SpnSfr0EQYI5GAZAvyg-pNujwrcsx8bYmkmebBCRupTYvGD3q5dZEj9vfsmze0yp1KPscS7a1q_H7rcF59PBkCbL1shD43cIRXgxfuHvg4rEiMb1k4cPk-qMXVVgnRMQwI7SX1An2EI8tCQS88DmAIGeXQ7Ae748_383i9TlFEpn" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none"></div>
+                    <div
+                        class="relative w-full max-w-md aspect-[4/5] rounded-2xl glass-panel blue-glow-rim p-2 overflow-hidden">
+                        <img alt="Profile Portrait"
+                            class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-all duration-700"
+                            src="images/profile.jpg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -478,31 +524,43 @@ void main() {
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
                 <!-- Power BI -->
-                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal" style="animation-delay: 0.1s;">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform">query_stats</span>
+                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal"
+                    style="animation-delay: 0.1s;">
+                    <span
+                        class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform">query_stats</span>
                     <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Power BI</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Expert in end-to-end dashboarding and cloud-native reporting architectures.</p>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Expert in end-to-end dashboarding
+                        and cloud-native reporting architectures.</p>
                     <div class="font-code-sm text-code-sm text-primary">99.9% Pipeline Reliability</div>
                 </div>
                 <!-- DAX -->
-                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal" style="animation-delay: 0.2s;">
-                    <span class="material-symbols-outlined text-4xl text-tertiary mb-6 group-hover:scale-110 transition-transform">function</span>
+                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal"
+                    style="animation-delay: 0.2s;">
+                    <span
+                        class="material-symbols-outlined text-4xl text-tertiary mb-6 group-hover:scale-110 transition-transform">function</span>
                     <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">DAX Engine</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Mastering complex measures and time-intelligent analytical functions.</p>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Mastering complex measures and
+                        time-intelligent analytical functions.</p>
                     <div class="font-code-sm text-code-sm text-tertiary">Optimized Query Logic</div>
                 </div>
                 <!-- SQL Server -->
-                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal" style="animation-delay: 0.3s;">
-                    <span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform">database</span>
+                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal"
+                    style="animation-delay: 0.3s;">
+                    <span
+                        class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:scale-110 transition-transform">database</span>
                     <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">SQL Server</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Architecture and management of high-volume relational databases.</p>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Architecture and management of
+                        high-volume relational databases.</p>
                     <div class="font-code-sm text-code-sm text-primary">Advanced Data Modeling</div>
                 </div>
                 <!-- Azure/Cloud -->
-                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal" style="animation-delay: 0.4s;">
-                    <span class="material-symbols-outlined text-4xl text-tertiary mb-6 group-hover:scale-110 transition-transform">cloud_sync</span>
+                <div class="glass-panel p-8 rounded-2xl magnetic-hover border border-white/5 group animate-reveal"
+                    style="animation-delay: 0.4s;">
+                    <span
+                        class="material-symbols-outlined text-4xl text-tertiary mb-6 group-hover:scale-110 transition-transform">cloud_sync</span>
                     <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cloud Stack</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Integration with Snowflake, Oracle, and Azure data services.</p>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">Integration with Snowflake,
+                        Oracle, and Azure data services.</p>
                     <div class="font-code-sm text-code-sm text-tertiary">Unified Infrastructure</div>
                 </div>
             </div>
@@ -512,10 +570,12 @@ void main() {
             <div class="absolute inset-0 bg-surface-container-low/50 backdrop-blur-3xl -z-10"></div>
             <div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center animate-reveal">
                 <span class="material-symbols-outlined text-6xl text-primary/30 mb-8">format_quote</span>
-                <blockquote class="font-headline-lg text-headline-lg text-on-surface max-w-4xl mx-auto leading-tight mb-8">
+                <blockquote
+                    class="font-headline-lg text-headline-lg text-on-surface max-w-4xl mx-auto leading-tight mb-8">
                     "Efficiency is not a goal; it is a requirement."
                 </blockquote>
-                <cite class="font-label-caps text-label-caps text-on-surface-variant not-italic tracking-widest">— Rajagopal Mandadi</cite>
+                <cite class="font-label-caps text-label-caps text-on-surface-variant not-italic tracking-widest">—
+                    Rajagopal Mandadi</cite>
             </div>
         </section>
         <!-- Projects Bento Grid -->
@@ -523,41 +583,60 @@ void main() {
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                 <div>
                     <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">High-Performance Projects</h2>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant">Real-world impact through analytical engineering.</p>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant">Real-world impact through analytical
+                        engineering.</p>
                 </div>
-                <button onclick="window.location.href='projects.html'" class="font-label-caps text-label-caps text-primary border-b border-primary hover:opacity-70 transition-opacity pb-1">View Archive</button>
+                <button onclick="window.location.href='projects.html'"
+                    class="font-label-caps text-label-caps text-primary border-b border-primary hover:opacity-70 transition-opacity pb-1">View
+                    Archive</button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
                 <!-- Featured Project -->
-                <div class="md:col-span-8 group relative overflow-hidden rounded-3xl glass-panel animate-reveal h-[500px] cursor-pointer" onclick="window.location.href='projects.html'">
+                <div class="md:col-span-8 group relative overflow-hidden rounded-3xl glass-panel animate-reveal h-[500px] cursor-pointer"
+                    onclick="window.location.href='projects.html'">
                     <div class="absolute inset-0 z-0">
-                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-40" alt="Insurance Analytics Dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs0O8EFHxW-WnB3g3ugnR4uL26fZ_kB9PCyJwdOb4EMJqUPxFM_MbA6vcguHK-3BqiikB7zfUdZm486-QyTaIf9cQjy3XFYxkH86ZhSdMM5KJ3A-H9WxV72eSkIsC6Sfcpye6zfo7Yl7Gz9gfDgSfypFuZAY0CWq56vZShxLehWCZecOriI0nbQZ5F6IMm1IXFoBuLafBhsn1aFJbYXHxalFtyI5TYH8FP52gh5qMpPkw7H68Fcy6wRnjuct6wd8kdgnmCqdhzHoxF" />
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-40"
+                            alt="Insurance Analytics Dashboard"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs0O8EFHxW-WnB3g3ugnR4uL26fZ_kB9PCyJwdOb4EMJqUPxFM_MbA6vcguHK-3BqiikB7zfUdZm486-QyTaIf9cQjy3XFYxkH86ZhSdMM5KJ3A-H9WxV72eSkIsC6Sfcpye6zfo7Yl7Gz9gfDgSfypFuZAY0CWq56vZShxLehWCZecOriI0nbQZ5F6IMm1IXFoBuLafBhsn1aFJbYXHxalFtyI5TYH8FP52gh5qMpPkw7H68Fcy6wRnjuct6wd8kdgnmCqdhzHoxF" />
                     </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-transparent z-10"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-transparent z-10">
+                    </div>
                     <div class="relative z-20 p-12 h-full flex flex-col justify-end">
                         <span class="font-label-caps text-label-caps text-primary mb-4">INSURANCE ANALYTICS</span>
-                        <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Medi Assist Global Dashboard</h3>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Medi Assist Global Dashboard
+                        </h3>
                         <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-6">
-                            Architected a comprehensive KPI tracking system for claims processing, reducing TAT through real-time anomaly detection and DAX-driven insights.
+                            Architected a comprehensive KPI tracking system for claims processing, reducing TAT through
+                            real-time anomaly detection and DAX-driven insights.
                         </p>
                         <div class="flex flex-wrap gap-3">
-                            <span class="bg-surface-container px-3 py-1 rounded text-code-sm font-code-sm border border-white/5">Power BI</span>
-                            <span class="bg-surface-container px-3 py-1 rounded text-code-sm font-code-sm border border-white/5">SQL Server</span>
-                            <span class="bg-surface-container px-3 py-1 rounded text-code-sm font-code-sm border border-white/5">Azure</span>
+                            <span
+                                class="bg-surface-container px-3 py-1 rounded text-code-sm font-code-sm border border-white/5">Power
+                                BI</span>
+                            <span
+                                class="bg-surface-container px-3 py-1 rounded text-code-sm font-code-sm border border-white/5">SQL
+                                Server</span>
+                            <span
+                                class="bg-surface-container px-3 py-1 rounded text-code-sm font-code-sm border border-white/5">Azure</span>
                         </div>
                     </div>
                 </div>
                 <!-- Secondary Projects -->
                 <div class="md:col-span-4 flex flex-col gap-gutter">
-                    <div class="glass-panel p-8 rounded-3xl flex-1 magnetic-hover animate-reveal cursor-pointer" onclick="window.location.href='projects.html'" style="animation-delay: 0.2s;">
+                    <div class="glass-panel p-8 rounded-3xl flex-1 magnetic-hover animate-reveal cursor-pointer"
+                        onclick="window.location.href='projects.html'" style="animation-delay: 0.2s;">
                         <span class="font-label-caps text-label-caps text-tertiary mb-4 block">SUPPLY CHAIN</span>
                         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4">Logistics Optimizer</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Real-time tracking of 500+ global shipment nodes using direct-query SQL connections.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Real-time tracking of 500+ global
+                            shipment nodes using direct-query SQL connections.</p>
                     </div>
-                    <div class="glass-panel p-8 rounded-3xl flex-1 magnetic-hover animate-reveal cursor-pointer" onclick="window.location.href='projects.html'" style="animation-delay: 0.3s;">
+                    <div class="glass-panel p-8 rounded-3xl flex-1 magnetic-hover animate-reveal cursor-pointer"
+                        onclick="window.location.href='projects.html'" style="animation-delay: 0.3s;">
                         <span class="font-label-caps text-label-caps text-primary mb-4 block">FINANCIAL BI</span>
                         <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4">Revenue Attribution</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Complex DAX modeling for MoM%, YoY% and YTD financial forecasts.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Complex DAX modeling for MoM%, YoY%
+                            and YTD financial forecasts.</p>
                     </div>
                 </div>
             </div>
@@ -567,30 +646,43 @@ void main() {
             <div class="glass-panel rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
                 <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
                 <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-tertiary/20 rounded-full blur-[100px]"></div>
-                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 relative z-10">Let's build your data future.</h2>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 relative z-10">Let's build your data
+                    future.</h2>
                 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 relative z-10">
-                    Ready to transform your organizational raw data into high-performance strategic assets? Let's discuss your architectural needs.
+                    Ready to transform your organizational raw data into high-performance strategic assets? Let's
+                    discuss your architectural needs.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center items-center gap-6 relative z-10">
-                    <a id="btn-cta-get-in-touch" class="bg-primary text-on-primary font-label-caps text-label-caps px-10 py-5 rounded-xl magnetic-hover w-full md:w-auto text-center" href="contact.html">Get in Touch</a>
-                    <button id="btn-cta-view-experience" onclick="window.location.href='experience.html'" class="border border-white/10 hover:bg-white/5 text-on-surface font-label-caps text-label-caps px-10 py-5 rounded-xl magnetic-hover w-full md:w-auto">View Experience</button>
+                    <a id="btn-cta-get-in-touch"
+                        class="bg-primary text-on-primary font-label-caps text-label-caps px-10 py-5 rounded-xl magnetic-hover w-full md:w-auto text-center"
+                        href="contact.html">Get in Touch</a>
+                    <button id="btn-cta-view-experience" onclick="window.location.href='experience.html'"
+                        class="border border-white/10 hover:bg-white/5 text-on-surface font-label-caps text-label-caps px-10 py-5 rounded-xl magnetic-hover w-full md:w-auto">View
+                        Experience</button>
                 </div>
             </div>
         </section>
     </main>
     <!-- Footer -->
     <footer class="bg-surface-container-lowest border-t border-outline-variant/30 py-12">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-base px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center gap-base px-margin-mobile md:px-gutter max-w-container-max mx-auto">
             <div class="flex flex-col items-center md:items-start gap-4">
-                <div class="font-headline-sm text-headline-sm font-black text-on-surface">R MANDADI</div>
+                <div class="font-headline-sm text-headline-sm font-black text-on-surface">Rajagopal Mandadi</div>
                 <p class="font-label-caps text-label-caps text-on-surface-variant text-center md:text-left">
-                    © 2024 R MANDADI. ENGINEERED FOR HIGH-PERFORMANCE.
+                    © 2024 Rajagopal Mandadi. ENGINEERED FOR HIGH-PERFORMANCE.
                 </p>
             </div>
             <div class="flex gap-8">
-                <a id="footer-link-linkedin" class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a id="footer-link-github" class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="https://github.com" target="_blank">GitHub</a>
-                <a id="footer-link-architecture" class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors" href="index.html">Architecture</a>
+                <a id="footer-link-linkedin"
+                    class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors"
+                    href="https://www.linkedin.com/in/rajagopal-mandadi-b0b1101a1/" target="_blank">LinkedIn</a>
+                <a id="footer-link-github"
+                    class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors"
+                    href="https://github.com/rajagopalmandadi" target="_blank">GitHub</a>
+                <a id="footer-link-architecture"
+                    class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors"
+                    href="index.html">Architecture</a>
             </div>
         </div>
     </footer>
@@ -626,7 +718,7 @@ void main() {
         document.querySelectorAll('.animate-reveal').forEach(el => observer.observe(el));
 
         // Mobile Navigation
-        (function() {
+        (function () {
             const menuBtn = document.getElementById('mobile-menu-btn');
             const closeBtn = document.getElementById('mobile-menu-close');
             const overlay = document.getElementById('mobile-nav-overlay');
