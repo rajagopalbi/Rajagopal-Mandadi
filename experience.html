@@ -426,8 +426,11 @@ void main() {
     <nav class="fixed top-0 w-full z-50 glass-panel border-b border-white/5 h-20">
         <div
             class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
-            <a id="logo-link" class="font-headline-sm text-headline-sm font-bold tracking-tighter text-primary"
-                href="index.html">Rajagopal Mandadi</a>
+            <a id="logo-link" class="flex items-center gap-3 font-headline-sm text-headline-sm font-bold tracking-tighter text-primary"
+                href="index.html">
+                <img src="images/profile.jpg" alt="Rajagopal Mandadi" class="w-10 h-10 rounded-full object-cover border border-primary/20" />
+                <span>Rajagopal Mandadi</span>
+            </a>
             <div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
                 <a id="nav-link-home" class="text-on-surface-variant hover:text-primary transition-all duration-300"
                     href="index.html">Home</a>
@@ -454,7 +457,10 @@ void main() {
     <div id="mobile-nav-overlay" class="mobile-nav-overlay md:hidden"></div>
     <div id="mobile-nav-panel" class="mobile-nav-panel md:hidden">
         <div class="flex items-center justify-between px-6 h-20 border-b border-white/10">
-            <span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tighter">Menu</span>
+            <div class="flex items-center gap-3">
+                <img src="images/profile.jpg" alt="Rajagopal Mandadi" class="w-8 h-8 rounded-full object-cover border border-primary/20" />
+                <span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tighter">Menu</span>
+            </div>
             <button id="mobile-menu-close"
                 class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors"
                 aria-label="Close navigation menu">

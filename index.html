@@ -417,8 +417,11 @@ void main() {
     <nav class="fixed top-0 w-full z-50 glass-panel border-b border-white/5 h-20">
         <div
             class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
-            <a id="logo-link" class="font-headline-sm text-headline-sm font-bold tracking-tighter text-primary"
-                href="index.html">Rajagopal Mandadi</a>
+            <a id="logo-link" class="flex items-center gap-3 font-headline-sm text-headline-sm font-bold tracking-tighter text-primary"
+                href="index.html">
+                <img src="images/profile.jpg" alt="Rajagopal Mandadi" class="w-10 h-10 rounded-full object-cover border border-primary/20" />
+                <span>Rajagopal Mandadi</span>
+            </a>
             <div class="hidden md:flex items-center space-gap gap-8">
                 <a id="nav-link-home"
                     class="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md transition-all duration-300"
@@ -448,7 +451,10 @@ void main() {
     <div id="mobile-nav-overlay" class="mobile-nav-overlay md:hidden"></div>
     <div id="mobile-nav-panel" class="mobile-nav-panel md:hidden">
         <div class="flex items-center justify-between px-6 h-20 border-b border-white/10">
-            <span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tighter">Menu</span>
+            <div class="flex items-center gap-3">
+                <img src="images/profile.jpg" alt="Rajagopal Mandadi" class="w-8 h-8 rounded-full object-cover border border-primary/20" />
+                <span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tighter">Menu</span>
+            </div>
             <button id="mobile-menu-close"
                 class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors"
                 aria-label="Close navigation menu">
@@ -505,12 +511,12 @@ void main() {
                 </div>
                 <div class="md:col-span-5 flex justify-center animate-reveal" style="animation-delay: 0.2s;">
                     <div
-                        class="relative w-full max-w-md aspect-[4/5] rounded-2xl glass-panel blue-glow-rim p-2 overflow-hidden">
+                        class="relative w-full max-w-sm aspect-square rounded-full glass-panel blue-glow-rim p-2 overflow-hidden">
                         <img alt="Profile Portrait"
-                            class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-all duration-700"
+                            class="w-full h-full object-cover rounded-full filter grayscale contrast-125 brightness-90 hover:grayscale-0 transition-all duration-700"
                             src="images/profile.jpg" />
                         <div
-                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none">
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none rounded-full">
                         </div>
                     </div>
                 </div>
